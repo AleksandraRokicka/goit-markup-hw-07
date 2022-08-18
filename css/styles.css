@@ -1,0 +1,14 @@
+.header-container {
+}
+.logo-style {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: black;
+}
+.link-no-underline {
+  text-decoration: none;
+}
+.blue-color-logo {
+  color: #2196f3;
+}
