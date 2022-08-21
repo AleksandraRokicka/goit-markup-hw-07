@@ -10,24 +10,25 @@
   --background: #2f303a;
   --footerlinks: #ffffff99;
   --productborder: #eeeeee;
+  --lightcream: #ececec;
 }
 .wrapper {
   width: 1600px;
   height: 2349px;
   margin: 0 auto;
-  background-color: white;
+  background-color: var(--white);
 }
 
 .header-container {
   gap: 93;
-  background-color: white;
+  background-color: var(--white);
   width: 1600px;
-
   align-items: center;
+  border: 1px solid #ececec;
 }
 
 .link {
-  color: #000000;
+  color: var(--black);
   width: 254px;
   height: 16px;
   left: 453px;
@@ -36,7 +37,7 @@
 }
 .style:hover,
 .style:focus {
-  color: #2196f3;
+  color: var(--blue);
   text-decoration: none;
 }
 
@@ -61,7 +62,7 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  color: black;
+  color: var(--black);
   font-family: "Raleway", sans-serif;
   padding-top: 24px;
   padding-right: 1240px;
@@ -93,10 +94,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  background: white;
-  margin: 0px;
-  padding: 0px;
-  color: c#e5e5e5;
+  background-color: var(--lightgrey);
 }
 .contact-style {
   text-decoration: none;
@@ -155,7 +153,7 @@ ul {
   height: 648px;
   left: 0px;
   top: 1449px;
-  background: #f5f4fa;
+  background-color: #f5f4fa;
   text-align: center;
 }
 .work-header {
@@ -219,7 +217,7 @@ ul {
   height: 252px;
   left: 0px;
   top: 2097px;
-  background: #2f303a;
+  background-color: #2f303a;
   color: white;
 }
 .footer-container {
@@ -240,6 +238,11 @@ ul {
   color: #ffffff99;
   text-decoration: none;
 }
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+  color: #2196f3;
+}
+
 .white-logo {
   color: white;
 }
@@ -251,7 +254,7 @@ ul {
   font-weight: 500;
   line-height: 1.6;
   color: #212121;
-  background: #f5f4fa;
+  background-color: #f5f4fa;
   cursor: pointer;
   border-radius: 4px;
   border-style: none;
