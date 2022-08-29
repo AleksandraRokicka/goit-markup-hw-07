@@ -215,6 +215,7 @@ ul {
 .team-list {
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 .team-name {
   font-weight: 500;
