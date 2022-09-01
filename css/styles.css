@@ -38,9 +38,7 @@ body {
 .header {
   align-items: center;
   display: flex;
-  gap: 93px;
   background-color: var(--white);
-  width: auto;
   border-bottom: 1px solid var(--lightcream);
   height: 80px;
 }
@@ -77,7 +75,7 @@ contact-link-style:focus {
   font-family: "Raleway", sans-serif;
   padding-top: 24px;
   padding-bottom: 25px;
-  margin-left: 215px;
+  margin: auto;
   text-decoration: none;
 }
 .blue-text {
@@ -91,11 +89,12 @@ contact-link-style:focus {
   line-height: 1.14;
   color: #212121;
   gap: 46px;
+  padding: 0%;
 }
 .navigation-list {
   display: flex;
   list-style: none;
-  margin: 0px;
+  margin-left: 93px;
 }
 
 .link-style {
@@ -131,6 +130,7 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 0.06em;
 }
 
 .main-button-style {
@@ -145,6 +145,7 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.06em;
   display: block;
   border-style: none;
   padding: 10px 41px;
@@ -152,19 +153,14 @@ ul {
 .no-margin {
   margin: 0px;
 }
-.lorem {
-  padding-top: 94px;
-}
+
 .box {
   display: flex;
   width: 1170px;
   gap: 30px;
-  justify-content: flex-start;
-  margin-top: 0%;
-  margin-bottom: 0%;
-  margin-left: auto;
+  justify-content: center;
+  padding: 0%;
 }
-
 .team {
   width: 100%;
   left: 0px;
@@ -199,7 +195,7 @@ ul {
   width: 1170px;
   left: 215px;
   top: 969px;
-  padding: 94px 0px 94px 0px;
+  padding-bottom: 94px;
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -208,8 +204,8 @@ ul {
 .work-list {
   display: flex;
   gap: 30px;
-  margin: auto;
   justify-content: center;
+  padding: 0%;
 }
 .section-header {
   font-weight: 700;
@@ -223,6 +219,7 @@ ul {
   display: flex;
   gap: 30px;
   justify-content: center;
+  padding: 0%;
 }
 .team-name {
   font-weight: 500;
