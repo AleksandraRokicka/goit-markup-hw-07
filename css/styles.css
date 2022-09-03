@@ -15,7 +15,7 @@
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   background-color: var(--lightgrey);
-  color: var(--grey);
+  color:var(--grey)
   font-size: 14px;
   letter-spacing: 0.03em;
   margin: 0;
@@ -338,7 +338,6 @@ ul {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-
   padding-bottom: 94px;
   gap: 30px;
   justify-content: center;
