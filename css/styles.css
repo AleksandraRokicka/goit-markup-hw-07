@@ -33,12 +33,15 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .header {
-  border-bottom: 1px solid #ececec;
   align-items: center;
   display: flex;
   background-color: var(--white);
   height: 80px;
+}
+.border-menu {
+  border-bottom: 1px solid #ececec;
 }
 
 .link-no-underline {
@@ -162,8 +165,6 @@ ul {
 }
 .team {
   width: 100%;
-  left: 0px;
-  top: 1449px;
   background-color: #f5f4fa;
   text-align: center;
   justify-content: center;
