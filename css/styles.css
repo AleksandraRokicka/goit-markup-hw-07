@@ -22,26 +22,23 @@ body {
   padding: 0;
 }
 
-.wrapper {
-  width: 100%;
-  margin: 0 auto;
-  background-color: var(--white);
-}
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .section {
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .header {
+  border-bottom: 1px solid #ececec;
   align-items: center;
   display: flex;
   background-color: var(--white);
-  border-bottom: 1px solid #ececec;
   height: 80px;
-  width: 100%;
 }
 
 .link-no-underline {
@@ -95,7 +92,7 @@ contact-link-style:focus {
 .navigation-list {
   display: flex;
   list-style: none;
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .link-style {
@@ -255,8 +252,6 @@ ul {
 }
 .footer {
   width: 100%;
-  left: 0px;
-  top: 2097px;
   background-color: #2f303a;
   color: white;
   padding: 60px 0px;
@@ -337,7 +332,6 @@ ul {
   flex-direction: row;
   display: flex;
   margin-top: 50px;
-  margin-bottom: 94px;
   list-style: none;
 }
 .portfolio-list {
@@ -355,19 +349,19 @@ ul {
   line-height: 2;
   color: #212121;
   letter-spacing: 0.06em;
-  margin: 20px 24px 4px 24px;
+  margin: 0px;
+  margin-bottom: 4px;
 }
 .project-specification {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: #757575;
-  margin: 4px 24px 20px 24px;
+  margin: 0px;
 }
 
 .pocket-project {
   width: 370px;
-  height: 404px;
   background-color: white;
 }
 
@@ -377,6 +371,8 @@ ul {
   border-bottom: 1px solid #eeeeee;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 img {
   display: block;
