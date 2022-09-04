@@ -125,6 +125,8 @@ ul {
   padding: 200px 0px;
   gap: 30px;
   flex-direction: column;
+  background-image: linear-gradient(to bottom, #2f303a66 0%, #2f303a66 100%),
+    url(../images/team-in-work.jpg);
 }
 
 .main-text {
