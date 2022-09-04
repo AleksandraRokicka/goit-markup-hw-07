@@ -375,6 +375,10 @@ ul {
 img {
   display: block;
 }
+.lorem li > div {
+  background: #f5f4fa;
+  border-radius: 4px;
+}
 
 .partners {
   display: flex;
