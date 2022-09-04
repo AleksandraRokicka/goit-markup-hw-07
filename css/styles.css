@@ -163,14 +163,10 @@ ul {
   gap: 30px;
   padding: 0%;
 }
-.team {
+.team {background-color: #f5f4fa;
   width: 100%;
-  background-color: #f5f4fa;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: auto;
+  
+  
 }
 
 .lorem {
