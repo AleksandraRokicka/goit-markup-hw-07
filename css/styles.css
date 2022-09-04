@@ -15,7 +15,7 @@
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   background-color: var(--lightgrey);
-  color:var(--grey)
+  color: var(--grey);
   font-size: 14px;
   letter-spacing: 0.03em;
   margin: 0;
@@ -163,10 +163,9 @@ ul {
   gap: 30px;
   padding: 0%;
 }
-.team {background-color: #f5f4fa;
+.team {
+  background-color: #f5f4fa;
   width: 100%;
-  
-  
 }
 
 .lorem {
