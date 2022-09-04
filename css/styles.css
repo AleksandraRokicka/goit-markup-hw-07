@@ -127,6 +127,7 @@ ul {
   flex-direction: column;
   background-image: linear-gradient(to bottom, #2f303a66 0%, #2f303a66 100%),
     url(../images/team-in-work.jpg);
+  background-size: 1600px;
 }
 
 .main-text {
