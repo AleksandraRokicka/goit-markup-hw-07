@@ -372,3 +372,14 @@ ul {
 img {
   display: block;
 }
+.partners {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+.partner-box {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
