@@ -375,6 +375,14 @@ ul {
 img {
   display: block;
 }
+
+.lorem li {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 25px 100px 100px;
+}
+
 .partners {
   display: flex;
   flex-direction: row;
