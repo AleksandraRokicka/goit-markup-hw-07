@@ -51,11 +51,12 @@ body {
 .contacts-style {
   gap: 50px;
   display: flex;
-  padding-left: 371px;
+  margin-left: auto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
+  padding: 32px 0px 32px 0px;
 }
 .contact-link-style {
   color: #757575;
@@ -69,13 +70,7 @@ body {
 }
 
 .contact-icon {
-  fill: #757575;
   margin-right: 10px;
-}
-
-.contact-icon:hover,
-.contact-icon:focus {
-  fill: #2196f3;
 }
 
 .logo-style {
@@ -86,7 +81,7 @@ body {
   font-family: "Raleway", sans-serif;
   padding-top: 24px;
   padding-bottom: 25px;
-  margin: auto;
+  margin-right: 93px;
   text-decoration: none;
 }
 .blue-text {
@@ -138,6 +133,8 @@ ul {
   background-image: linear-gradient(to bottom, #2f303a66 0%, #2f303a66 100%),
     url(../images/team-in-work.jpg);
   background-size: 1600px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .main-text {
@@ -176,7 +173,7 @@ ul {
   gap: 30px;
   padding: 0%;
 }
-.team {
+.our-team {
   background-color: #f5f4fa;
   width: 100%;
 }
@@ -256,17 +253,20 @@ ul {
   margin-bottom: 30px;
 }
 
+.our-team-media:hover svg,
+.our-team-media:focus svg {
+  background: #2196f3;
+  border-radius: 50%;
+  fill: white;
+}
+.our-team-media:focus {
+  outline: none;
+}
 .icon-social {
   width: 44px;
   height: 44px;
   background-color: #ffffff;
   fill: #afb1b8;
-}
-.icon-social:hover,
-.icon-social:focus {
-  border-radius: 50%;
-  background-color: #2196f3;
-  fill: #ffffff;
 }
 
 .pocket-team {
@@ -288,12 +288,14 @@ ul {
   padding: 60px 0px;
 }
 .footer-container {
-  flex-direction: column;
   color: white;
   margin-left: auto;
   display: flex;
+  align-items: baseline;
 }
-
+.footer-address {
+  flex-direction: column;
+}
 .address-text {
   margin-top: 20px;
   font-style: normal;
@@ -302,7 +304,7 @@ ul {
   line-height: 1.71;
 }
 .footer-link-style {
-  margin-top: 9px;
+  margin: 9px 0px 9px 0px;
   padding: 0px;
   list-style: none;
 }
@@ -338,7 +340,14 @@ ul {
   flex-direction: row;
   gap: 30px;
 }
-
+.client-logo:hover svg,
+.client-logo:focus svg {
+  fill: #2196f3;
+  border-color: #2196f3;
+}
+.client-logo:focus {
+  outline: none;
+}
 .partner-box {
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -375,8 +384,8 @@ ul {
   background-color: #2196f3;
   fill: #ffffff;
 }
-.socials {
- 
+.footer-socials {
+  margin-left: 70px;
 }
 .social-media-header {
   font-weight: 700;
@@ -384,8 +393,6 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: #ffffff;
-  margin-top: 0px;
-  margin-bottom: 20px;
 }
 
 .button-secondary {
@@ -406,6 +413,8 @@ ul {
 .button-secondary:focus {
   background-color: #2196f3;
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-secondary-container {
   margin-top: 94px;
@@ -449,6 +458,12 @@ ul {
 .pocket-project {
   width: 370px;
   background-color: white;
+  cursor: pointer;
+}
+.pocket-project:hover,
+.pocket-project:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .border-no-top {
@@ -468,4 +483,7 @@ img {
   border-radius: 4px;
   margin-bottom: 30px;
   padding: 25px 102px;
+}
+svg {
+  fill: currentColor;
 }
