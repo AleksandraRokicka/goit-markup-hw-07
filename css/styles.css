@@ -56,8 +56,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 .contact-link-style {
   color: #757575;
@@ -66,11 +64,18 @@ body {
   align-items: center;
 }
 .contact-link-style:hover,
-contact-link-style:focus {
+.contact-link-style:focus {
   color: #2196f3;
 }
+
 .contact-icon {
   fill: #757575;
+  margin-right: 10px;
+}
+
+.contact-icon:hover,
+.contact-icon:focus {
+  fill: #2196f3;
 }
 
 .logo-style {
@@ -286,6 +291,7 @@ ul {
   flex-direction: column;
   color: white;
   margin-left: auto;
+  display: flex;
 }
 
 .address-text {
@@ -331,7 +337,6 @@ ul {
   display: flex;
   flex-direction: row;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
 .partner-box {
@@ -354,8 +359,8 @@ ul {
 }
 
 .footer-social-links {
-  gap: 10px;
   display: flex;
+  gap: 10px;
 }
 .footer-icon-social {
   width: 44px;
@@ -363,7 +368,6 @@ ul {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   fill: white;
-  margin-top: 20px;
 }
 .footer-icon-social:hover,
 .footer-icon-social:focus {
@@ -371,15 +375,17 @@ ul {
   background-color: #2196f3;
   fill: #ffffff;
 }
-.footer-join-us {
-  margin-left: 531px;
+.socials {
+ 
 }
-.footer-join-us > span {
+.social-media-header {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .button-secondary {
