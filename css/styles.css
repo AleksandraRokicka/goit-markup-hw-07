@@ -62,10 +62,15 @@ body {
 .contact-link-style {
   color: #757575;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .contact-link-style:hover,
 contact-link-style:focus {
   color: #2196f3;
+}
+.contact-icon {
+  fill: #757575;
 }
 
 .logo-style {
@@ -229,12 +234,34 @@ ul {
   line-height: 1.19;
   text-align: center;
   color: #212121;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-profession {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: #757575;
+}
+.social-links {
+  display: flex;
+  margin-top: 16px;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.icon-social {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  fill: #afb1b8;
+}
+.icon-social:hover,
+.icon-social:focus {
+  border-radius: 50%;
+  background-color: #2196f3;
+  fill: #ffffff;
 }
 
 .pocket-team {
@@ -298,6 +325,61 @@ ul {
 }
 .white-logo {
   color: white;
+}
+
+.partners {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+
+.partner-box {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  width: 170px;
+  height: 92px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-right: 32px;
+  padding-left: 32px;
+  cursor: pointer;
+}
+
+.partner-box:hover,
+.partners-box:focus {
+  fill: #2196f3;
+  border-color: #2196f3;
+}
+
+.footer-social-links {
+  gap: 10px;
+  display: flex;
+}
+.footer-icon-social {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: white;
+  margin-top: 20px;
+}
+.footer-icon-social:hover,
+.footer-icon-social:focus {
+  border-radius: 50%;
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+.footer-join-us {
+  margin-left: 531px;
+}
+.footer-join-us > span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 .button-secondary {
@@ -380,16 +462,4 @@ img {
   border-radius: 4px;
   margin-bottom: 30px;
   padding: 25px 102px;
-}
-
-.partners {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  padding-bottom: 94px;
-}
-.partner-box {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  fill: #afb1b8;
 }
