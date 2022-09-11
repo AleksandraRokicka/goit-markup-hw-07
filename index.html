@@ -29,21 +29,21 @@
             <li>
               <a
                 href="index.html"
-                class="link-no-underline link-style"
+                class="link-no-underline link-style nav-active"
                 >Agencja</a
               >
             </li>
             <li>
               <a
                 href="portfolio.html"
-                class="link-no-underline link-style"
+                class="link-no-underline link-style nav-active"
                 >Portfolio</a
               >
             </li>
             <li>
               <a
                 href="contacts.html"
-                class="link-no-underline link-style"
+                class="link-no-underline link-style nav-active"
                 >Kontakt</a
               >
             </li>
@@ -75,7 +75,8 @@
     <main>
       <section class="section container main-section">
         <h1 class="main-text no-margin">EFEKTYWNE ROZWIĄZANIA</br>DLA WASZEGO BIZNESU</h1>
-        <button type="button" class="main-button-style">Zamów usługę</button>
+        <button type="button" class="main-button-style" type="button" data-modal-open>
+          Zamów usługę</button>
       </section>
       <section class="section container lorem no-padding-bottom">
         <ul class="box no-margin">
@@ -124,30 +125,37 @@
       <section class="section container service">
         <h2 class="section-header">Czym się zajmujemy</h2>
         <ul class="work-list no-margin">
-          <li>
+          <li class="thumb">
             <img
               src="images/img.jpg"
               width="370"
               height="294"
               alt="note on laptop"
             />
+            <div class="label">
+            <p class="text-label">APLIKACJE KOMPUTEROWE</p>
+            </div>
           </li>
-          <li>
+          <li class="thumb">
             <img
               src="images/img1.jpg"
               width="370"
               height="294"
               alt="using smartfon"
             />
-          </li>
-          <li>
+            <div class="label">
+            <p class="text-label">APLIKACJE MOBILNE</p>
+         </div> </li>
+            <li class="thumb">
             <img
               src="images/img2.jpg"
               width="370"
               height="294"
               alt="design on laptop"
             />
-          </li>
+            <div class="label">
+            <p class="text-label">ROZWIĄZANIA GRAFICZNE</p>
+          </div></li>
         </ul>
       </section>
       <section class="container our-team section">
@@ -396,5 +404,19 @@
       </div>
       </div>
     </footer>
+    <div class="backdop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <svg width="30px" height="30px">
+            <use width="18px" height="18px" x="6" y="6" xlink:href="./images/close-button.svg#icon-close-button"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  <script src="./js/modal.js"></script>  
   </body>
 </html>
+
+
+
+ 
