@@ -123,7 +123,7 @@ body {
   color: #2196f3;
 }
 
-.nav-active::after {
+.nav-border::after {
   position: relative;
   content: "";
   width: 100%;
@@ -134,6 +134,18 @@ body {
   display: block;
 }
 
+.nav-active:hover::after,
+.nav-active:focus::after{
+  position: absolute;
+content: "";
+display: block;
+  border-radius: 2px;
+  height: 4px;
+  width: 58px;
+top: 78px;
+background-color: #2196f3;
+
+}
 ul {
   list-style-type: none;
   margin: 0px;
@@ -295,6 +307,12 @@ ul {
   justify-content: center;
   margin-bottom: 30px;
 }
+.our-team-media svg {
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .our-team-media:hover svg,
 .our-team-media:focus svg {
@@ -305,6 +323,7 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .our-team-media:focus {
   outline: none;
 }
@@ -362,13 +381,13 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   margin: 9px 0px 9px 0px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contact-link:hover,
 .footer-contact-link:focus {
   color: #2196f3;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-footer-style {
   font-weight: 700;
@@ -409,15 +428,15 @@ ul {
   padding-right: 32px;
   padding-left: 32px;
   cursor: pointer;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .partner-box:hover,
 .partner-box:focus {
   fill: #2196f3;
   border-color: #2196f3;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-links {
@@ -541,7 +560,7 @@ ul {
   background: rgba(33, 150, 243, 0.9);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.pack:hover .overlay {
+.pocket-project:hover .overlay {
   transform: translate(0);
 }
 .overlay-text {
@@ -579,13 +598,13 @@ svg {
 .backdrop {
   position: fixed;
   left: 0px;
-  right: 0px;
   top: 0px;
-  bottom: 0px;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   display: flex;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -598,9 +617,9 @@ svg {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   left: 50%;
-  top: 50%;
-  opacity: 1;
+  top: 50%;  
 }
+
 .close-button {
   position: absolute;
   margin: 8px 8px 543px 490px;
