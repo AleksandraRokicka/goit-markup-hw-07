@@ -123,6 +123,9 @@ body {
   color: #2196f3;
 }
 
+.nav-border{
+  color: #2196f3;
+}
 .nav-border::after {
   position: relative;
   content: "";
@@ -135,16 +138,15 @@ body {
 }
 
 .nav-active:hover::after,
-.nav-active:focus::after{
+.nav-active:focus::after {
   position: absolute;
-content: "";
-display: block;
+  content: "";
+  display: block;
   border-radius: 2px;
   height: 4px;
   width: 58px;
-top: 78px;
-background-color: #2196f3;
-
+  top: 78px;
+  background-color: #2196f3;
 }
 ul {
   list-style-type: none;
@@ -617,7 +619,7 @@ svg {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   left: 50%;
-  top: 50%;  
+  top: 50%;
 }
 
 .close-button {
