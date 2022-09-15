@@ -132,7 +132,7 @@ body {
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-active:hover::after,
-.nav-active:focus::after{
+.nav-active:focus::after {
   background-color: #2196f3;
 }
 
@@ -307,14 +307,9 @@ ul {
   display: flex;
   transition-property: color, background-color;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-social-media:hover,
-.icon-social-media:focus {
-  color: white;
-  background-color: #2196f3;
-  border-radius: 50%;
-}
 .icon-social {
   width: 44px;
   height: 44px;
@@ -391,6 +386,10 @@ ul {
   color: white;
 }
 
+.footer-icon-social{
+  border-radius: 50%;
+
+}
 .partners {
   display: flex;
   flex-direction: row;
@@ -415,7 +414,7 @@ ul {
   padding-right: 32px;
   padding-left: 32px;
   cursor: pointer;
-  transition-property: fill;
+  transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -438,10 +437,6 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill, background-color;
   display: flex;
-}
-.icon-social-media-footer:focus,
-.icon-social-media-footer:hover {
-  background-color: #2196f3;
 }
 
 .footer-socials {
@@ -591,6 +586,7 @@ svg {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   display: flex;
+  transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -622,5 +618,4 @@ svg {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition-property: opacity, visibility;
 }
