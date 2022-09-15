@@ -1,6 +1,6 @@
 .root {
   --white: #ffffff;
-  --black: #000000;
+  --black: #b41b1b;
   --blue: #2196f3;
   --darkgrey: #2f303a;
   --grey: #757575;
@@ -109,13 +109,11 @@ body {
 
 .link-style {
   color: #212121;
-  width: 254px;
-  left: 453px;
-  top: 32px;
   text-decoration: none;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 
 .link-style:hover,
@@ -141,12 +139,13 @@ body {
 .nav-active:focus::after {
   position: absolute;
   content: "";
-  display: block;
   border-radius: 2px;
   height: 4px;
-  width: 58px;
-  top: 78px;
-  background-color: #2196f3;
+  width: 100%;
+  top: 49px;
+  left:0;
+  background-color: transparent;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 ul {
   list-style-type: none;
@@ -434,13 +433,11 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .partner-box:hover,
 .partner-box:focus {
   fill: #2196f3;
   border-color: #2196f3;
 }
-
 .footer-social-links {
   display: flex;
   gap: 10px;
@@ -620,6 +617,7 @@ svg {
   border-radius: 4px;
   left: 50%;
   top: 50%;
+
 }
 
 .close-button {
@@ -631,6 +629,7 @@ svg {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+
 }
 
 .is-hidden {
