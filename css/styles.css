@@ -309,7 +309,11 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.icon-social-media:hover,
+.icon-social-media:focus{
+  color:#ffffff;
+  background-color: #2196f3;
+}
 .icon-social {
   width: 44px;
   height: 44px;
@@ -386,10 +390,12 @@ ul {
   color: white;
 }
 
-.footer-icon-social{
-  border-radius: 50%;
-
+.icon-social-media-footer:hover,
+.icon-social-media-footer:focus{
+  background-color: #2196f3;
 }
+
+
 .partners {
   display: flex;
   flex-direction: row;
