@@ -310,8 +310,8 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-social-media:hover,
-.icon-social-media:focus{
-  color:#ffffff;
+.icon-social-media:focus {
+  color: #ffffff;
   background-color: #2196f3;
 }
 .icon-social {
@@ -354,6 +354,7 @@ ul {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  width: 246px;
 }
 .footer-link-style {
   margin: 9px 0px 9px 0px;
@@ -391,10 +392,9 @@ ul {
 }
 
 .icon-social-media-footer:hover,
-.icon-social-media-footer:focus{
+.icon-social-media-footer:focus {
   background-color: #2196f3;
 }
-
 
 .partners {
   display: flex;
@@ -433,6 +433,10 @@ ul {
   display: flex;
   gap: 10px;
 }
+.footer-list-newsletter{
+  display: flex;
+  gap: 12px;
+}
 .icon-social-media-footer {
   color: white;
   border-radius: 50%;
@@ -454,6 +458,56 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-bottom: 20px;
+}
+.newsletter {
+  margin-left: 78px;
+}
+.input-email {
+  color: #ffffff99;
+  background-color: #2f303a;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: none;
+}
+/* .input-email:hover,
+.input-email:focus{
+border-color: #2196f3;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+} */
+.button-newsletter {
+  font-family: "Roboto";
+  background-color: #2196f3;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border-style: none;
+  display: block;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0%;
+}
+.icon-send {
+  fill: #ffffff;
+  margin-left: 24px;
+  margin-top: 13px ;
 }
 
 .button-secondary {
@@ -619,6 +673,19 @@ svg {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+}
+.modal-header{
+font-weight: 700;
+font-size: 20px;
+line-height: 2.3px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+margin-top: 40px;
+}
+.icon-person{
+  fill: #212121;
+;
 }
 .is-hidden {
   opacity: 0;
