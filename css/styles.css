@@ -669,7 +669,11 @@ svg {
 
 .close-button {
   position: absolute;
-  margin: 8px 8px 543px 490px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top:8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   background-color: #ffffff;
@@ -687,6 +691,8 @@ svg {
   margin-top: 40px;
 }
 .modal-label {
+  display: block;
+  position: relative;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -697,6 +703,7 @@ svg {
 }
 
 .modal-input {
+  display: block;
   height: 40px;
   width: 448px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -705,13 +712,13 @@ svg {
   font-size: 12px;
   letter-spacing: 0.03em;
   line-height: 1.25;
-  margin-left: 40px;
   margin-top: 4px;
   margin-bottom: 10px;
   padding: 0 0 0 42px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: border, outline-color;
+  background-color: transparent;
 }
 
 .modal-input::placeholder {
@@ -731,20 +738,24 @@ svg {
 }
 
 .modal-icon {
-  position: relative;
+  position: absolute;
   fill: #212121;
   height: 12px;
   width: 12px;
+  left: 15px;
+  bottom: 20px;
   right: 435px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
+  transform: translateY(50%); 
+  z-index: -1;
 }
 
-/* .modal-icon:hover,
+.modal-icon:hover,
 .modal-icon:focus{
   fill:#2196f3;
-} */
+}
 .modal-feedback {
   width: 448px;
   height: 120px;
@@ -770,6 +781,7 @@ svg {
   margin-top: 20px;
   margin-bottom: 30px;
   margin-left: 55px;
+  
 }
 
 .modal-checkbox {
@@ -784,6 +796,7 @@ svg {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color, background-image;
   margin-right: 8px;
+  cursor: pointer;
 }
 .modal-checkbox:checked {
   border: none;
