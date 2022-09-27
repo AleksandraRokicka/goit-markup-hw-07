@@ -1,7 +1,36 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #2196f3;
+  --lightgrey: #757575;
+  --mediumgrey: #2f303a;
+  --darkgrey: #212121;
+  --buttonbackground: #f5f4fa;
+  --background: #e5e5e5;
+  --bordergrey: #ececec;
+  --cardborder: #eeeeee;
+  --color-icons: #afb1b8;
+  --footerlinks: rgba(255, 255, 255, 0.6);
+  --boxshadowcolor: rgba(0, 0, 0, 0.15);
+  --boxshadowcolorone: rgba(0, 0, 0, 0.1);
+  --boxshadowcolortwo: rgba(0, 0, 0, 0.08);
+  --boxshadowcolorthree: rgba(0, 0, 0, 0.12);
+  --boxshadowcolorfour: rgba(0, 0, 0, 0.14);
+  --boxshadowcolorfive: rgba(0, 0, 0, 0.2);
+  --boxshadowcolorsix: rgba(0, 0, 0, 0.06);
+  --boxshadowcolorseven: rgba(0, 0, 0, 0.16);
+  --background-image: rgba(47, 48, 58, 0.8);
+  --backdrop: rgba(0, 0, 0, 0.2);
+  --background-card: rgba(33, 150, 243, 0.9);
+  --border-signup: rgba(255, 255, 255, 0.3);
+  --textarea-border: rgba(33, 33, 33, 0.2);
+  --textarea-placeholder: rgba(117, 117, 117, 0.5);
+}
+
 body {
   font-family: "Roboto", "Raleway", sans-serif;
-  background-color: var(--lightgrey);
-  color: var(--grey);
+  background-color: var(--white);
+  color: var(--darkgrey);
   font-size: 14px;
   letter-spacing: 0.03em;
   margin: 0;
@@ -25,9 +54,10 @@ body {
   display: flex;
   background-color: var(--white);
   height: 80px;
+  
 }
 .border-menu {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--bordergrey);
 }
 
 .link-no-underline {
@@ -45,7 +75,7 @@ body {
   padding: 32px 0px 32px 0px;
 }
 .contact-link-style {
-  color: #757575;
+  color: var(--lightgrey);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -56,14 +86,14 @@ body {
 
 .contact-link-style:hover,
 .contact-link-style:focus {
-  color: #2196f3;
+  color: var(--blue);
 }
 
 .contact-icon {
   margin-right: 10px;
 }
 
-.logo-style {
+.logo {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -74,8 +104,11 @@ body {
   margin-right: 93px;
   text-decoration: none;
 }
-.blue-text {
-  color: #2196f3;
+.logo_dark-theme{
+  color: var(--black);
+}
+.logo__accent-text {
+  color: var(--blue);
 }
 
 .navigation-style {
@@ -83,7 +116,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: #212121;
+  color: var(--darkgrey);
   gap: 46px;
   padding: 0%;
 }
@@ -94,7 +127,7 @@ body {
 }
 
 .link-style {
-  color: #212121;
+  color: var(--darkgrey);
   text-decoration: none;
   transition-property: color;
   transition-duration: 250ms;
@@ -104,11 +137,11 @@ body {
 
 .link-style:hover,
 .link-style:focus {
-  color: #2196f3;
+  color: var(--blue);
 }
 
 .nav-border {
-  color: #2196f3;
+  color:var(--blue);
 }
 .nav-border::after {
   position: relative;
@@ -116,7 +149,7 @@ body {
   width: 100%;
   height: 4px;
   top: 32px;
-  background: #2196f3;
+  background: var(--blue);
   border-radius: 2px;
   display: block;
 }
@@ -133,7 +166,7 @@ body {
 }
 .nav-active:hover::after,
 .nav-active:focus::after {
-  background-color: #2196f3;
+  background-color: var(--blue);
 }
 
 ul {
@@ -143,7 +176,7 @@ ul {
 }
 
 .main-section {
-  background-color: #2f303a;
+  background-color: var(--mediumgrey);
   width: auto;
   display: flex;
   align-items: center;
@@ -159,7 +192,7 @@ ul {
 }
 
 .main-text {
-  color: white;
+  color: var(--white);
   text-align: center;
   font-weight: 900;
   font-size: 44px;
@@ -169,11 +202,11 @@ ul {
 
 .main-button-style {
   font-family: "Roboto";
-  background-color: #2196f3;
+  background-color: var(--blue);
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--boxshadowcolor);
   cursor: pointer;
-  color: white;
+  color: var(--white);
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -198,7 +231,7 @@ ul {
   padding: 0%;
 }
 .our-team {
-  background-color: #f5f4fa;
+  background-color: var(--buttonbackground);
   width: 100%;
 }
 
@@ -215,7 +248,7 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  color: #212121;
+  color: var(--darkgrey);
   letter-spacing: 0.03em;
 }
 
@@ -223,7 +256,7 @@ ul {
   width: 270px;
   font-size: 14px;
   line-height: 1.71;
-  color: #757575;
+  color: var(--lightgrey);
   letter-spacing: 0.03em;
 }
 
@@ -244,12 +277,12 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  color: #212121;
+  color: var(--darkgrey);
   text-align: center;
   margin: 0px 0px 50px 0px;
 }
 .text-label {
-  color: #ffffff;
+  color: var(--white);
   text-align: center;
   font-weight: 700;
   font-size: 14px;
@@ -262,7 +295,7 @@ ul {
   position: relative;
 }
 .label {
-  background: rgba(47, 48, 58, 0.8);
+  background: var(--background-image);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -280,7 +313,7 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  color: #212121;
+  color: var(--darkgrey);
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -288,7 +321,7 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  color: #757575;
+  color: var(--lightgrey);
 }
 .social-links {
   display: flex;
@@ -299,8 +332,8 @@ ul {
 }
 
 .icon-social-media {
-  color: #afb1b8;
-  background-color: #ffffff;
+  color: var(--color-icons);
+  background-color: var(--white);
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -311,36 +344,36 @@ ul {
 }
 .icon-social-media:hover,
 .icon-social-media:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--white);
+  background-color: var(--blue);
 }
 .icon-social {
   width: 44px;
   height: 44px;
-  background-color: #ffffff;
-  fill: #afb1b8;
+  background-color: var(--white);
+  fill: var(--color-icons);
 }
 
 .pocket-team {
   width: 270px;
   left: 215px;
   top: 1635px;
-  background-color: white;
+  background-color: var(--white);
   text-align: center;
   justify-content: center;
   margin: 0%;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px var(--boxshadowcolorthree), 0px 1px 1px var(--boxshadowcolorfour),
+    0px 2px 1px var(--boxshadowcolorfive);
   border-radius: 0px 0px 4px 4px;
 }
 .footer {
   width: 100%;
-  background-color: #2f303a;
-  color: white;
+  background-color: var(--mediumgrey);
+  color: var(--white);
   padding: 60px 0px;
 }
 .footer-container {
-  color: white;
+  color: var(--white);
   margin-left: auto;
   display: flex;
   align-items: baseline;
@@ -362,7 +395,7 @@ ul {
   list-style: none;
 }
 .footer-contact-link {
-  color: #ffffff99;
+  color: var(--footerlinks);
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
@@ -374,7 +407,7 @@ ul {
 }
 .footer-contact-link:hover,
 .footer-contact-link:focus {
-  color: #2196f3;
+  color: var(--blue);
 }
 .logo-footer-style {
   font-weight: 700;
@@ -385,15 +418,15 @@ ul {
   text-decoration: none;
 }
 .blue-text {
-  color: #2196f3;
+  color: var(--blue);
 }
 .white-logo {
-  color: white;
+  color: var(--white);
 }
 
 .icon-social-media-footer:hover,
 .icon-social-media-footer:focus {
-  background-color: #2196f3;
+  background-color: var(--blue);
 }
 
 .partners {
@@ -403,16 +436,16 @@ ul {
 }
 .client-logo:hover svg,
 .client-logo:focus svg {
-  fill: #2196f3;
-  border-color: #2196f3;
+  fill: var(--blue);
+  border-color: var(--blue);
 }
 .client-logo:focus {
   outline: none;
 }
 .partner-box {
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--color-icons);
   border-radius: 4px;
-  fill: #afb1b8;
+  fill: var(--color-icons);
   width: 170px;
   height: 92px;
   padding-top: 18px;
@@ -426,8 +459,8 @@ ul {
 }
 .partner-box:hover,
 .partner-box:focus {
-  fill: #2196f3;
-  border-color: #2196f3;
+  fill: var(--blue);
+  border-color: var(--blue);
 }
 .footer-social-links {
   display: flex;
@@ -438,7 +471,7 @@ ul {
   gap: 12px;
 }
 .icon-social-media-footer {
-  color: white;
+  color: var(--white);
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   width: 44px;
@@ -457,7 +490,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white);
   margin-bottom: 20px;
 }
 .newsletter {
@@ -465,7 +498,7 @@ ul {
 }
 .input-email {
   color: #ffffff99;
-  background-color: #2f303a;
+  background-color:var(--mediumgrey);
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -473,7 +506,7 @@ ul {
   font-size: 16px;
   line-height: 20px;
   align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--border-signup);
   border-radius: 4px;
   outline: none;
   transition-duration: 250ms;
@@ -482,17 +515,17 @@ ul {
 }
 .input-email:hover,
 .input-email:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--blue);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
 .button-newsletter {
   font-family: "Roboto";
-  background-color: #2196f3;
+  background-color: var(--blue);
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--boxshadowcolor);
   cursor: pointer;
-  color: white;
+  color: var(--white);
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -509,7 +542,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-send {
-  fill: #ffffff;
+  fill:var(--white);
   margin-left: 24px;
 }
 
@@ -520,8 +553,8 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  color: #212121;
-  background-color: #f5f4fa;
+  color: var(--darkgrey);
+  background-color: var(--buttonbackground);
   cursor: pointer;
   border-radius: 4px;
   border-style: none;
@@ -532,10 +565,10 @@ ul {
 }
 .button-secondary:hover,
 .button-secondary:focus {
-  background-color: #2196f3;
-  color: #ffffff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: var(--blue);
+  color:var(--white);
+  box-shadow: 0px 3px 1px var(--boxshadowcolorone), 0px 1px 2px var(--boxshadowcolortwo),
+    0px 2px 2px var(--boxshadowcolorthree);
 }
 .button-secondary-container {
   margin-top: 94px;
@@ -563,7 +596,7 @@ ul {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  color: #212121;
+  color: var(--darkgrey);
   letter-spacing: 0.06em;
   margin: 0px;
   margin-bottom: 4px;
@@ -572,13 +605,13 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  color: #757575;
+  color: var(--lightgrey);
   margin: 0px;
 }
 
 .pocket-project {
   width: 370px;
-  background-color: white;
+  background-color:var(--white);
   cursor: pointer;
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -586,8 +619,8 @@ ul {
 }
 .pocket-project:hover,
 .pocket-project:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px var(--boxshadowcolorthree), 0px 4px 4px var(--boxshadowcolorsix),
+    1px 4px 6px var(--boxshadowcolorseven);
 }
 .pack {
   position: relative;
@@ -603,7 +636,7 @@ ul {
   height: 101%;
   transform: translateY(100%);
   transition: 250ms;
-  background: rgba(33, 150, 243, 0.9);
+  background: var(--background-card);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .pocket-project:hover .overlay {
@@ -614,16 +647,16 @@ ul {
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white);
   text-align: start;
   padding: 49px 45px 49px 24px;
   margin: 0px;
 }
 
 .border-no-top {
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid var(--cardborder);
+  border-right: 1px solid var(--cardborder);
+  border-bottom: 1px solid var(--cardborder);
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -633,7 +666,7 @@ img {
   display: block;
 }
 .lorem li > div {
-  background: #f5f4fa;
+  background: var(--buttonbackground);
   border-radius: 4px;
   margin-bottom: 30px;
   padding: 25px 102px;
@@ -647,7 +680,7 @@ svg {
   top: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--backdrop);
   display: flex;
   transition-property: opacity, visibility;
   transition-duration: 250ms;
@@ -659,9 +692,9 @@ svg {
   width: 528px;
   height: 581px;
   transform: translateX(-50%) translateY(-50%);
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: var(--white);
+  box-shadow: 0px 1px 3px var(--boxshadowcolorthree), 0px 1px 1px var(--boxshadowcolorfour),
+    0px 2px 1px var(--boxshadowcolorfive);
   border-radius: 4px;
   left: 50%;
   top: 50%;
@@ -676,8 +709,8 @@ svg {
   right: 8px;
   width: 30px;
   height: 30px;
-  background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
+  border: 1px solid var(--boxshadowcolorone);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -687,7 +720,7 @@ svg {
   line-height: 2.3px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--darkgrey);
   margin-top: 40px;
 }
 .modal-label {
@@ -697,18 +730,18 @@ svg {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--lightgrey);
   margin-left: 40px;
-  fill: #2196f3;
+  fill: var(--blue);
 }
 
 .modal-input {
   display: block;
   height: 40px;
   width: 448px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--textarea-border);
   border-radius: 4px;
-  color: #212121;
+  color: var(--darkgrey);
   font-size: 12px;
   letter-spacing: 0.03em;
   line-height: 1.25;
@@ -726,20 +759,20 @@ svg {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: var(--textarea-placeholder);
 }
 .modal-input:hover,
 .modal-input:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--blue);
 }
 .modal-input:focus-within + .modal-icon,
 .modal-input:hover + .modal-icon {
-  fill: #2196f3;
+  fill: var(--blue);
 }
 
 .modal-icon {
   position: absolute;
-  fill: #212121;
+  fill: var(--darkgrey);
   height: 12px;
   width: 12px;
   left: 15px;
@@ -754,7 +787,7 @@ svg {
 
 .modal-icon:hover,
 .modal-icon:focus{
-  fill:#2196f3;
+  fill:var(--blue);
 }
 .modal-feedback {
   width: 448px;
@@ -772,7 +805,7 @@ svg {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--lightgrey);
   line-height: 1.17;
   letter-spacing: 0.03em;
   display: flex;
@@ -789,7 +822,7 @@ svg {
   background-position: 50% 50%;
   width: 16px;
   height: 15px;
-  border: 2px solid #212121;
+  border: 2px solid var(--darkgrey);
   border-radius: 2px;
   position: relative;
   transition-duration: 250ms;
@@ -801,7 +834,7 @@ svg {
 .modal-checkbox:checked {
   border: none;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
-  background-color: #2196f3;
+  background-color:var(--blue);
 }
 .hidden-checkbox {
   -moz-appearance: none;
@@ -810,11 +843,11 @@ svg {
 }
 .button-send {
   font-family: "Roboto";
-  background-color: #2196f3;
+  background-color:var(--blue);
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--boxshadowcolor);
   cursor: pointer;
-  color: white;
+  color:var(--white);
   width: 200px;
   height: 50px;
   font-weight: 700;
