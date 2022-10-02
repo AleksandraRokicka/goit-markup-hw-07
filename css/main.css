@@ -68,11 +68,9 @@ svg {
   margin-right: 93px;
   text-decoration: none;
 }
-
 .logo--dark-theme {
   color: var(--black);
 }
-
 .logo--accent-text {
   color: var(--blue);
 }

@@ -8,12 +8,11 @@
     padding-bottom: 25px;
     margin-right: 93px;
     text-decoration: none;
-  }
   
-  .logo--dark-theme{
+  &--dark-theme{
     color: var(--black);
   }
   
-  .logo--accent-text {
+  &--accent-text {
     color: var(--blue);
-  }
+  }}
