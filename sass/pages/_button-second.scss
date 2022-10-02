@@ -1,0 +1,32 @@
+.second-menu {
+  margin-top: 94px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  list-style: none;}
+
+.button-second {
+  font-family: "Roboto";
+  padding: 6px 22px;
+  height: 38px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--darkgrey);
+  background-color: var(--buttonbackground);
+  cursor: pointer;
+  border-radius: 4px;
+  border-style: none;
+  border-width: 0;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+  background-color: var(--blue);
+  color:var(--white);
+  box-shadow: 0px 3px 1px var(--boxshadowcolorone), 0px 1px 2px var(--boxshadowcolortwo),
+    0px 2px 2px var(--boxshadowcolorthree);
+}
+}

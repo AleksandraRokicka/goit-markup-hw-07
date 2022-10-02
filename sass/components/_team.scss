@@ -1,0 +1,77 @@
+.team {
+    background-color: var(--buttonbackground);
+    width: 100%;
+  
+ &__header{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--darkgrey);
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+  }
+
+ &__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 0%;
+  }
+
+ &__list-pocket{
+    width: 270px;
+    left: 215px;
+    top: 1635px;
+    background-color: var(--white);
+    text-align: center;
+    justify-content: center;
+    margin: 0%;
+    box-shadow: 0px 1px 3px var(--boxshadowcolorthree), 0px 1px 1px var(--boxshadowcolorfour),
+      0px 2px 1px var(--boxshadowcolorfive);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--darkgrey);
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__profession {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--lightgrey);
+  }}
+
+  .social-links {
+    display: flex;
+    margin-top: 16px;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+  
+  &__icon {
+    color: var(--color-icons);
+    background-color: var(--white);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--white);
+    background-color: var(--blue);
+  }
+  }}
+
+  
+
+  

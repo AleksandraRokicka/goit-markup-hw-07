@@ -1,0 +1,41 @@
+
+  body {
+    font-family: "Roboto", "Raleway", sans-serif;
+    background-color: var(--white);
+    color: var(--darkgrey);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .no-margin {
+    margin: 0px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  .link-no-underline {
+    text-decoration: none;
+  }
+  .no-padding-bottom {
+    padding-bottom: 0px;
+  }
+  
+  .blue-text {
+    color: var(--blue);
+  }
+  img {
+  display: block;
+}
+.lorem li > div {
+  background: var(--buttonbackground);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 102px;
+}
+svg {
+  fill: currentColor;
+}

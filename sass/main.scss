@@ -1,4 +1,22 @@
-body{
-    padding: 0;
-    margin: 0;
-}
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
+
+@import "./components/logo";
+@import "./components/menu-nav";
+@import "./components/contact";
+@import "./components/main-section";
+@import "./components/buttons";
+@import "./components/lorem";
+@import "./components/service";
+@import "./components/team";
+@import "./components/partners";
+@import "./components/modal";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./pages/button-second";
+@import "./pages/portfolio";
+
+@import "./utils/variables";

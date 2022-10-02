@@ -1,0 +1,198 @@
+.backdrop {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--backdrop);
+  display: flex;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  transform: translateX(-50%) translateY(-50%);
+  background: var(--white);
+  box-shadow: 0px 1px 3px var(--boxshadowcolorthree), 0px 1px 1px var(--boxshadowcolorfour),
+    0px 2px 1px var(--boxshadowcolorfive);
+  border-radius: 4px;
+  left: 50%;
+  top: 50%;
+
+
+&__button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top:8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--white);
+  border: 1px solid var(--boxshadowcolorone);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+&__header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 2.3px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--darkgrey);
+  margin-top: 40px;
+}
+
+&__label {
+  display: block;
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--lightgrey);
+  margin-left: 40px;
+  fill: var(--blue);
+}
+
+&__input {
+  display: block;
+  height: 40px;
+  width: 448px;
+  border: 1px solid var(--textarea-border);
+  border-radius: 4px;
+  color: var(--darkgrey);
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  line-height: 1.25;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding: 0 0 0 42px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border, outline-color;
+  background-color: transparent;
+
+  &::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--textarea-placeholder);
+}
+&:hover,
+&:focus {
+  border: 1px solid var(--blue);
+}
+&:focus-within + .modal__icon,
+&:hover + .modal__icon {
+  fill: var(--blue);
+}
+}
+
+&__icon {
+  position: absolute;
+  fill: var(--darkgrey);
+  height: 12px;
+  width: 12px;
+  left: 15px;
+  bottom: 20px;
+  right: 435px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+  transform: translateY(50%); 
+  z-index: -1;
+
+&:hover,
+&:focus{
+  fill:var(--blue);
+}
+}
+
+
+&__feedback {
+  width: 448px;
+  height: 120px;
+  resize: none;
+  padding-top: 12px;
+  padding-left: 16px;
+}}
+
+.no-margin-bottom {
+  margin-bottom: 0%;
+}
+.checkbox {
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--lightgrey);
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 55px;
+
+&__icon {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--darkgrey);
+  border-radius: 2px;
+  position: relative;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, background-image;
+  margin-right: 8px;
+  cursor: pointer;
+  
+  &:checked {
+  border: none;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
+  background-color:var(--blue);
+}
+}
+
+&--hidden {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}}
+
+.button-send {
+  font-family: "Roboto";
+  background-color:var(--blue);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px var(--boxshadowcolor);
+  cursor: pointer;
+  color:var(--white);
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  display: block;
+  border-style: none;
+  margin-left: 164px;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;}

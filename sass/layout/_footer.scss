@@ -1,0 +1,159 @@
+.footer {
+    width: 100%;
+    background-color: var(--mediumgrey);
+    color: var(--white);
+    padding: 60px 0px;
+
+  &__box {
+    color: var(--white);
+    margin-left: auto;
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__box-address {
+    flex-direction: column;
+  }
+
+  &__link {
+    margin: 9px 0px 9px 0px;
+    padding: 0px;
+    list-style: none;
+
+  &--contact {
+    color: var(--footerlinks);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    margin: 9px 0px 9px 0px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--blue);
+  }
+  }}
+  
+  &__socials {
+    margin-left: 70px;
+  
+  &--header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    margin-bottom: 20px;
+  }
+ &--links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  &--links-icon {
+    color: var(--white);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill, background-color;
+    display: flex;
+  &:hover,
+  &:focus {
+    background-color: var(--blue);
+  }
+  }}}
+
+  .logo-footer {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--white);
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+  
+  &-color{
+    color: var(--blue);
+  
+  }}
+
+  .address-text {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    width: 246px;
+  }
+  
+  .newsletter {
+    margin-left: 78px;
+  
+  &__header{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  margin-bottom: 20px;}
+  
+ &__list {
+    display: flex;
+    gap: 12px;
+  }}
+  
+  .input-email {
+    color: #ffffff99;
+    background-color:var(--mediumgrey);
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    border: 1px solid var(--border-signup);
+    border-radius: 4px;
+    outline: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border;
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--blue);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+  }
+ 
+  .newsletter-button {
+    font-family: "Roboto";
+    background-color: var(--blue);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px var(--boxshadowcolor);
+    cursor: pointer;
+    color: var(--white);
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border-style: none;
+    display: flex;
+    padding-left: 42px;
+    align-items: center;
+    text-align: center;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .icon-send {
+    fill:var(--white);
+    margin-left: 24px;
+  }
