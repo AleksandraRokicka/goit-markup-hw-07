@@ -20,7 +20,7 @@
     padding: 0px;
     list-style: none;
 
-  &--contact {
+  &-contact {
     color: var(--footerlinks);
     text-decoration: none;
     font-weight: 400;
@@ -39,7 +39,7 @@
   &__socials {
     margin-left: 70px;
   
-  &--header {
+  &-header {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -47,12 +47,12 @@
     color: var(--white);
     margin-bottom: 20px;
   }
- &--links {
+ &-links {
     display: flex;
     gap: 10px;
   }
   
-  &--links-icon {
+  &-icon {
     color: var(--white);
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);

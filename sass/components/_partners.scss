@@ -20,8 +20,8 @@
   }
   &:focus {
     outline: none;
-  }
-  &-svg {
+  }}
+  &__logo-svg {
     border: 1px solid var(--color-icons);
     border-radius: 4px;
     fill: var(--color-icons);
@@ -36,9 +36,9 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &-svg:hover,
-  &-svg:focus {
+  &__logo-svg:hover,
+  &__logo-svg:focus {
     fill: var(--blue);
     border-color: var(--blue);
-  }}}
+  }}
   
